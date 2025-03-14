@@ -10,64 +10,6 @@
 - Tailwind CSS
 - Google Fonts (LXGW WenKai)
 
-## 功能特性
-
-- 🎨 深色主题设计
-- 📱 完全响应式布局
-- ⚡ 高性能和优化
-- 🎭 平滑滚动效果
-- 🌟 视差滚动
-- ✨ 悬浮动画效果
-- 🔄 页面过渡动画
-- 📦 渐进式加载
-
-## 页面结构
-
-1. 导航栏
-   - 首页
-   - 关于我
-   - 项目展示
-   - 联系方式
-
-2. Hero Section
-   - 个人核心信息展示
-
-3. 内容区块
-   - 个人简介
-   - 技能展示
-   - 教育经历
-   - 项目经验
-
-4. 页脚
-   - 社交媒体链接
-   - 版权信息
-
-## 开发说明
-
-### 安装依赖
-
-```bash
-npm install
-```
-
-### 开发环境运行
-
-```bash
-npm run dev
-```
-
-### 生产环境构建
-
-```bash
-npm run build
-```
-
-### 生产环境运行
-
-```bash
-npm start
-```
-
 ## 项目结构
 
 ```
@@ -79,16 +21,45 @@ npm start
 └── styles/            # 全局样式
 ```
 
+## 开发说明
+
+### 安装依赖
+
+```bash
+npm install
+```
+
+### 本地开发
+
+```bash
+npm run dev
+```
+
+### 构建项目
+
+```bash
+npm run build
+```
+
+## 部署说明
+
+本项目已配置好使用 Netlify 进行自动部署。以下是部署步骤：
+
+1. 在 [Netlify](https://www.netlify.com) 注册账号
+2. 点击 "New site from Git" 按钮
+3. 选择你的 Git 仓库并授权
+4. 选择包含本项目的仓库
+5. 部署配置会自动从 netlify.toml 文件读取，包括：
+   - 构建命令：`npm run build`
+   - 发布目录：`out`
+   - Node.js 版本：18
+6. 点击 "Deploy site" 开始部署
+
+部署完成后，Netlify 会提供一个默认的域名（例如：your-site-name.netlify.app）。你也可以在 Netlify 的域名设置中添加自定义域名。
+
 ## 性能优化
 
 - 使用 Next.js Image 组件优化图片加载
 - 组件懒加载
 - 页面加载性能优化
 - 资源预加载
-
-## 浏览器支持
-
-- Chrome (最新版本)
-- Firefox (最新版本)
-- Safari (最新版本)
-- Edge (最新版本) 
